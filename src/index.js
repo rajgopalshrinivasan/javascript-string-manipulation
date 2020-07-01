@@ -2,14 +2,14 @@
 const lf = () => {};
 
 // Create a tagged template cr`...` that formats text using CR line endings.
-const cr = () => {};
+const  cr = () => {};
 
 // Create a tagged template crlf`...` that formats text using CRLF line endings.
 const crlf = () => {};
 
 const transformLineEnding = (string, lineEnding) => {
 
-  let {replaceLF, replaceCR,replaceCRLF} = {...LineEndingReplacements}
+  const {replaceLF, replaceCR,replaceCRLF} = LineEndingReplacements;
 
   string = (string != null ? string.toString() : "");
 
